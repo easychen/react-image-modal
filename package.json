@@ -1,0 +1,35 @@
+{
+  "name": "react-image-modal",
+  "version": "1.0.0",
+  "description": "React modal for images",
+  "keywords": [
+    "react",
+    "modal",
+    "image",
+    "react-image-modal",
+    "react-modal-image"
+  ],
+  "main": "./dist/index.js",
+  "author": "Aun Jaffery",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.2",
+    "react-dom": "^16.0.0 || ^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

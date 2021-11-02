@@ -1,0 +1,56 @@
+body {
+  overflow: hidden;
+}
+.__react_image_modal {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  touch-action: none;
+  overflow: hidden;
+}
+.__react_image_content__ {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.__react_image_content__ img,
+.__react_image_content__ svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
+}
+.__react_image_medium {
+  max-width: 98%;
+  max-height: 98%;
+}
+.__react_image_header__ {
+  position: absolute;
+  z-index: 60000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.__react_header_flex {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.__react_header_flex span {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}

@@ -19,10 +19,12 @@ function App({
     }
   };
   useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown, false);
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown, false);
-    };
+    if (document) {
+      document.addEventListener("keydown", handleKeyDown, false);
+      return () => {
+        document.removeEventListener("keydown", handleKeyDown, false);
+      };
+    }
   }, []);
   const onCloseModal = () => {
     setIsOpenModal(false);

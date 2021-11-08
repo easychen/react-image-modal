@@ -32,7 +32,7 @@ body {
   max-height: 98%;
 }
 .__react_image_header__ {
-  position: absolute;
+  position: fixed;
   z-index: 60000;
   top: 0;
   left: 0;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ImageModal from "./ImageModal.jsx";
 import "./styles.css";
 
@@ -12,20 +12,7 @@ function App({
   showZoom = true,
 }) {
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const handleKeyDown = (event) => {
-    // ESC or ENTER closes the modal
-    if (event.keyCode === 27 || event.keyCode === 13) {
-      setIsOpenModal(false);
-    }
-  };
-  useEffect(() => {
-    if (document) {
-      document.addEventListener("keydown", handleKeyDown, false);
-      return () => {
-        document.removeEventListener("keydown", handleKeyDown, false);
-      };
-    }
-  }, []);
+
   const onCloseModal = () => {
     setIsOpenModal(false);
   };

@@ -21,8 +21,8 @@ import ModalImage from "react-image-modal";
 
 <ModalImage
   showDownload={true}
-  showRotation={false}
-  showZoom={false}
+  showRotation={true}
+  showZoom={true}
   src="image"
   alt="cat image!"
   className="string"

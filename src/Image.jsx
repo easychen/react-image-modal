@@ -7,7 +7,7 @@ const Image = ({ id, src, style, className, handleDoubleClick }) => {
     setLoading(false);
   };
   return (
-    <div>
+    <p>
       {loading && <SpinnerIcon />}
       <img
         id={id}
@@ -17,7 +17,7 @@ const Image = ({ id, src, style, className, handleDoubleClick }) => {
         onLoad={handleOnLoad}
         onDoubleClick={handleDoubleClick}
       />
-    </div>
+    </p>
   );
 };
 
